@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<!-- <script type="text/javascript" src=skript.js></script> -->
+</head>
+<body>
+	<script type="text/javascript">
+		var power = function() {
+
+		 base=+prompt("Введите значение base");
+		 exponent = +prompt("Введите значение exponent");
+		var result = 1;
+
+		if (exponent>=0) {
+			for (var count = 0; count < exponent; count++)
+			result *= base;
+			return result;
+			}else {
+				if(exponent<0){
+				for (var count = 0; count > exponent; count--)
+				result *= base;
+				result=1/result;
+				return result;
+				}
+			}
+		}
+
+
+console.log(power());
+console.log(Math.pow(base, exponent));
+	</script>
+
+</body>
+</html>
