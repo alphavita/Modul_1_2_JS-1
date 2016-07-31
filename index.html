@@ -7,6 +7,7 @@
 </head>
 <body>
 	<script type="text/javascript">
+		alert ("Первое задание");
 		var power = function() {
 
 		 base=+prompt("Введите значение base");
@@ -30,6 +31,26 @@
 
 console.log(power());
 console.log(Math.pow(base, exponent));
+
+alert ("Второе задание");
+
+var arr = new Array();
+for (var i = 0; i < 5; i++) {
+	arr[i] = prompt("Введите " + (i+1) + '-ое имя');
+}
+// console.log(arr);
+name = prompt("введите свое имя");
+for (var i = 0; i <5; i++) {
+	if(name == arr[i]){
+		alert(name + ', вы успешно вошли');
+		break;
+
+	}
+	alert ("Такого имени нет в базе данных");
+	break;
+}
+
+
 	</script>
 
 </body>
